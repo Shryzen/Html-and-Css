@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Survey</h1>
+    <p id="description">
+This is the html survey form that we have build with the help of freecodecamp.
+    </p>
+    <form id="survey-form">
+<label id="name-label" for="name">Name:</label>
+<input type="text" id ="name" placeholder="Enter your name" required>
+
+<label id="email-label" for="email">Email:</label>
+<input type="email" id="email" placeholder="enter your email" required>
+
+<label id="number-label" for="number">Age(optional)</label>
+<input type="number" id="number"  min="1" max="100" placeholder="Age" required>
+
+<label id="dropdown-label">Which option best describes your current role?</label>
+<select id="dropdown">
+  <option value="select">Select your current role</option>
+  <option value="student" selected>student</option>
+  <option value="parttmer">part-timer</option>
+  <option value="fulltimer">full-timer</option>
+</select>
+
+<fieldset>
+<legend>Would you recommend freeCodeCamp to a friend?</legend>
+<label>
+ <input type="radio" name="recommend" value="yes"> Definitely 
+ <input type="radio" name="recommend" value="maybe">Maybe
+            </label>
+    <input type="radio" name="recommend" value="no"> Not sure        
+
+</fieldset>
+<label id="dropdown-label">What is your favorite feature of freeCodeCamp?</label>
+<select id="dropdown">
+  <option value="select" selcted>Select an option</option>
+  <option value="student" >challanges</option>
+  <option value="parttmer">open source</option>
+  <option value="fulltimer">Projects</option>
+</select>
+
+<label></label>
+  <input type="checkbox" name="Intrests" value="Frontend">Front-end Projects
+  </label>
+  <label>
+  <input type="checkbox" name="Intrests" value="Backend">Back-end Projects 
+  </label>
+  <label>
+  <input type="checkbox" name="Intrests" value="Data">Data Visualization
+  </label>
+  <label>
+  <input type="checkbox" name="Intrests" value="challenges">Challenges
+  </label>
+  <label>
+  <input type="checkbox" name="Intrests" value="open">Open Source Community
+  </label>
+
+
+
+<lable for="comments">For comments</lable>
+  <textarea id="comments" placeholder="If you have any comments please leave a comment in this text box." rows="5" 
+          cols="50" ></textarea>
+
+<button type="submit" id="submit">submit</button>
+    </form>
+  </body>
+</html>
